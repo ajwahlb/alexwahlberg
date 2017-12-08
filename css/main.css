@@ -1,0 +1,252 @@
+html, body{ 
+    height: 100vh;
+}
+body{
+    border:15px solid #e7e6d6;
+    background-color: #e7e6d6;
+}
+.container-fluid{
+    padding: 0;
+}
+.row{
+    margin: 15px 0;
+}
+
+/* HP GRID STYLES */
+.row.inner,
+.row.inner:last-of-type{
+    margin: 0;
+}
+.row.inner:first-of-type{
+    margin-bottom: 15px;
+}
+.row.features .col.first{
+    margin-right: 7px;
+}
+.row.features .col.last{
+    margin-left: 7px;
+}
+.features .col{
+    padding:0;
+}
+.hp-painting{
+     background: url(/images/hp-painting.jpg) center center/cover;
+}
+.mission{
+    padding: 6vw 2vw;
+}
+.mission h1{
+    padding-bottom: 3vw;
+}
+.principals{
+    padding: 1vw 0 3vw;
+}
+.principals h3{
+    color:#ff5f41;
+}
+.headline{
+    padding: 20vw 4vw 4vw;
+}
+.headline a{
+    margin: 20px 0;
+}
+
+/* PAGE MAIN FEATURE STYLES*/
+.full-height {
+    background-position: center center;
+    height: 98vh;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    display: block;
+}
+.feature{
+    background-image: url(/images/feature2.jpg);
+}
+svg#arrow{
+    width: 149px;
+}
+.arrow{
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+}
+
+/* GENERAL THEME STYLES */
+h1{
+    font-size: 4rem;
+}
+h1, h2{
+    font-weight: bold;
+    color: #ff5f41;
+}
+h4 {
+    line-height: 1.5;
+}
+button.primary:hover{
+    border-left: 3px solid #fff;
+    border-bottom: 3px solid #fff;
+    border-top: 3px solid #ff5f41;
+    border-right: 3px solid #ff5f41;
+}
+button.primary{
+    background-color: #ff5f41;
+    border: 3px solid #ff5f41;
+    border-radius: 3px;
+    padding: 9px 23px;
+    font-size: 1.6rem;
+    color: #fff;
+}
+.center{
+    text-align: center;
+}
+.dark{
+    background-color: #4e4e4e;
+}
+.white{
+    background-color: #fff;
+}
+.text-white{
+    color: #fff;
+}
+.principal{
+    border-bottom: 1px solid #fff;
+    padding-bottom: 15px;
+    font-style: italic;
+    font-weight: bold;
+}
+.col-lg-4,
+.col-md-6{
+    padding:0;
+}
+
+
+/* HEADER */
+.header {
+    border: 15px solid #fff;
+    border-bottom: 0;
+    position: absolute;
+    left: -15px;
+    top: -15px;
+    right: -15px;
+    z-index: 999;
+    display: block;
+}
+.shell-fluid {
+    max-width: none;
+}
+.header .logo {
+    display: inline-block;
+    width: 106px;
+    height: 106px;
+    position: fixed;
+    left: 15px;
+    top: 15px;
+    overflow: hidden;
+    opacity: 1;
+    transition: opacity .4s ease;
+}
+.btn-nav {
+    width: 80px;
+    height: 80px;
+    background-color: #e7e6d6;
+    padding: 20px;
+    text-align: center;
+    line-height: 86px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    transition: right .3s ease;
+}
+
+/* SLIDE OUT MENU */
+svg#closeX{
+    height: 15px;
+    width: 15px;
+}
+.slideout-menu {
+   position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    width: 0px;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    opacity:0;
+    background-color: #ff5f41;
+    transition: .3s;
+    z-index: 30;
+}
+.nav .nav-head {
+    border-bottom: 5px solid #ca5038;
+    padding: 24px 26px 22px;
+    width: 100%;
+}
+.nav .nav-head a {
+    display: block;
+    letter-spacing: .15em;
+}
+.nav .nav-head a span {
+    font-weight: 500;
+    font-size: 19px;
+    color: #e7e6d6;
+}
+.nav .nav-head a i {
+    float: right;
+    margin-right: 16px;
+}
+.nav .nav-body {
+    height: calc(100vh - 90px);
+    overflow-y: auto;
+    width: 100%;
+}
+.navtoggle{
+    width: 380px;
+    transition: .3s;
+}
+.slideout-open {
+    opacity:1;
+    transition: .3s;
+}
+.socials ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.socials li {
+    border-bottom: 5px solid #ca5038;
+}
+.socials a {
+    display: block;
+    padding: 14px 27px 13px;
+    font-weight: 900;
+    font-size: 24px;
+    color: #e7e6d6;
+    text-transform: uppercase;
+    letter-spacing: .15em;
+    transition: color .4s ease, background-color .4s ease;
+}
+.socials a i {
+    font-size: 20px;
+    display: inline-block;
+    vertical-align: baseline;
+    margin-right: 8px;
+}
+nav, header{
+    display: block;
+}
+.nav-item{
+    cursor: pointer;
+}
+
+
+/* FOOTER STYLES */
+footer{
+    padding: 20vw 2vw;
+    text-align: center;
+}
+@media(max-width: 767px) and (min-width: 1px){
+    
+}

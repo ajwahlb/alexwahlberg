@@ -1,0 +1,32 @@
+<html>
+
+	{% include head.html %}
+
+	<body>
+		{% include side-nav.html %}
+		<div class="container-fluid">
+			{% include header.html %}
+			
+			{{content}}
+			
+			<div class="col">
+				<div id="thumbnails" class="row">
+
+					<div class="row">
+					{% for project in site.art %}
+
+						<div class="col-lg-4 col-md-6 project {{project.category}}">
+							<a href="{{site.baseurl}}/art/{{project.slug}}/"><img src="{{site.baseurl}}/images/{{project.images}}" width="100%"></a>
+						</div>
+
+					{% endfor %}
+					</div>
+
+				</div>
+			</div>
+		</div>
+		{% include footer.html %}
+	</body>
+
+	
+</html>
