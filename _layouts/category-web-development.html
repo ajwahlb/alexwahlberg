@@ -13,10 +13,10 @@
 				<div id="thumbnails" class="row">
 
 					<div class="row">
-					{% for project in site.design %}
+					{% for project in site.web-development %}
 
 						<div class="col-lg-4 col-md-6 project {{project.category}}">
-							<a href="{{site.baseurl}}/design/{{project.slug}}/"><img src="{{site.baseurl}}/images/{{project.images}}" width="100%"></a>
+							<a href="{{site.baseurl}}/web-development/{{project.slug}}/"><img src="{{site.baseurl}}/images/{{project.images}}" width="100%"></a>
 						</div>
 
 					{% endfor %}

@@ -39,9 +39,9 @@ collections:
   photography:
     output: true
     permalink: /photography/:path/
-  design:
+  web-development:
     output: true
-    permalink: /design/:path/
+    permalink: /web-development/:path/
 
 
 # Exclude from processing.
