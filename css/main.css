@@ -51,6 +51,7 @@ body{
     margin: 20px 0;
 }
 
+
 /* PAGE MAIN FEATURE STYLES*/
 .full-height {
     background-position: center center;
@@ -120,7 +121,10 @@ button.primary{
 .col-md-6{
     padding:0;
 }
-
+.project:hover{
+    padding:8px;
+    transition: .4s;
+}
 
 /* HEADER */
 .header {
