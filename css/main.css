@@ -12,26 +12,6 @@ body{
     margin: 15px 0;
 }
 
-/* HP GRID STYLES */
-.row.inner,
-.row.inner:last-of-type{
-    margin: 0;
-}
-.row.inner:first-of-type{
-    margin-bottom: 15px;
-}
-.row.features .col.first{
-    margin-right: 7px;
-}
-.row.features .col.last{
-    margin-left: 7px;
-}
-.features .col{
-    padding:0;
-}
-.hp-painting{
-     background: url(/images/hp-painting.jpg) center center/cover;
-}
 .mission{
     padding: 6vw 2vw;
 }
@@ -51,7 +31,27 @@ body{
     margin: 20px 0;
 }
 
-
+.hp-categories{
+    padding: 5vw;
+}
+.hp-categories .col{
+    padding: 5vw 10px;
+    text-align: center;
+    transition: .3s;
+}
+.hp-categories .col:hover{
+    transform: scale(1.1);
+    z-index: 3;
+}
+.col.hp-web{
+    background-color: #424D79;
+}
+.col.hp-art{
+    background-color: #6379A6;
+}
+.col.hp-photo{
+    background-color: #86A3C3;
+}
 /* PAGE MAIN FEATURE STYLES*/
 .full-height {
     background-position: center center;
