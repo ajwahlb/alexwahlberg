@@ -8,15 +8,21 @@
 			{% include header.html %}
 			
 			{{content}}
-			
+		</div>
+		<div class="container">
 			<div class="col">
 				<div id="thumbnails" class="row">
 
 					<div class="row">
 					{% for project in site.web-development %}
 
-						<div class="col-lg-4 col-md-6 project {{project.category}}">
-							<a href="{{site.baseurl}}/web-development/{{project.slug}}/"><img src="{{site.baseurl}}/images/{{project.images}}" width="100%"></a>
+						<div class="col-lg-4 col-md-6 project">
+							<a href="{{project.website}}" target="_blank">
+								<img src="{{site.baseurl}}/images/{{project.images}}" width="100%">
+								<div class="btn-center d-flex align-items-center">
+									<button type="button" class="btn btn-warning">Visit Website</button>
+								</div>
+							</a>
 						</div>
 
 					{% endfor %}
