@@ -1,4 +1,4 @@
-html, body{ 
+html, body{
     height: 100vh;
 }
 body{
@@ -25,10 +25,13 @@ body{
     color:#ff5f41;
 }
 .headline{
-    padding: 20vw 4vw 4vw;
+  position: absolute;
+  margin: auto;
+  width: 100%;
+  bottom: 18%;
 }
 .headline a{
-    margin: 20px 0;
+  margin: 20px 0;
 }
 
 .hp-categories{
@@ -61,8 +64,11 @@ body{
     overflow: hidden;
     display: block;
 }
-.feature{
+.feature-art{
     background-image: url(/images/feature2.jpg);
+}
+.feature-web{
+    background-image: url(/images/web-dev.gif);
 }
 svg#arrow{
     width: 149px;
@@ -84,6 +90,7 @@ h1, h2{
 }
 h4 {
     line-height: 1.5;
+    font-weight: 200;
 }
 button.primary:hover{
     border-left: 3px solid #fff;
@@ -128,9 +135,19 @@ button.primary{
 .col-md-6{
     padding:0;
 }
+.eg-bg{
+  background: url(/images/art/emerald-grove/eg-01.jpg) top center/cover;
+  padding: 7vw 28vw;
+}
+.eg-inner{
+  background:#fff url(/images/art/emerald-grove/FullSizeRender-small.png) top center/75% no-repeat;
+  width: 100%;
+  padding-top: 100%;
+  border-radius: 50%;
+}
 .project:hover{
-    padding:8px;
-    transition: .4s;
+    /*opacity: .7;
+    transition: .3s;*/
 }
 
 /* HEADER */
@@ -259,5 +276,8 @@ footer{
     text-align: center;
 }
 @media(max-width: 767px) and (min-width: 1px){
-    
+  .eg-bg{
+    background: url(/images/art/emerald-grove/eg-01.jpg) top center/cover;
+    padding: 10vw 5vw;
+  }
 }
