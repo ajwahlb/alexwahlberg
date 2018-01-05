@@ -9,15 +9,15 @@
 
 			{{content}}
 		</div>
-		<!-- <div class="container">
+		<div class="container">
 			<div class="col">
 				<div id="thumbnails" class="row">
 
 					<div class="row">
-					{% for project in site.photography %}
+					{% for project in site.design %}
 
-						<div class="col-lg-4 col-md-6 project {{project.category}}">
-							<a href="{{site.baseurl}}/photography/{{project.slug}}/"><img src="{{site.baseurl}}/images/{{project.images}}" width="100%"></a>
+						<div class="col-lg-4 col-md-6 project">
+							<a href="{{site.baseurl}}/design/{{project.slug}}/"><img src="{{site.baseurl}}/images/{{project.images}}" width="100%"></a>
 						</div>
 
 					{% endfor %}
@@ -25,7 +25,7 @@
 
 				</div>
 			</div>
-		</div> -->
+		</div>
 		{% include footer.html %}
 	</body>
 
