@@ -131,16 +131,21 @@ button.primary{
     font-style: italic;
     font-weight: bold;
 }
+.nameplate{
+  background-color: #5a524e;
+  border-radius: 15px;
+  padding: 20px;
+}
 .col-lg-4,
 .col-md-6{
     padding:0;
 }
 .eg-bg{
-  background: url(/images/art/emerald-grove/eg-01.jpg) top center/cover;
+  background: url(/images/design/emerald-grove/eg-01.jpg) top center/cover;
   padding: 7vw 28vw;
 }
 .eg-inner{
-  background:#fff url(/images/art/emerald-grove/FullSizeRender-small.png) top center/75% no-repeat;
+  background:#fff url(/images/design/emerald-grove/FullSizeRender-small.png) top center/75% no-repeat;
   width: 100%;
   padding-top: 100%;
   border-radius: 50%;
@@ -277,7 +282,13 @@ footer{
 }
 @media(max-width: 767px) and (min-width: 1px){
   .eg-bg{
-    background: url(/images/art/emerald-grove/eg-01.jpg) top center/cover;
+    background: url(/images/design/emerald-grove/eg-01.jpg) top center/cover;
     padding: 10vw 5vw;
+  }
+  h1{
+    font-size: 3rem;
+  }
+  h1.project-title{
+    margin-top: 112px;
   }
 }
