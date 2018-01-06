@@ -65,7 +65,10 @@ body{
     display: block;
 }
 .feature-art{
-    background-image: url(/images/feature2.jpg);
+    background-image: url(/images/feature-art.jpg);
+}
+.feature-design{
+    background-image: url(/images/feature-design.jpg);
 }
 .feature-web{
     background-image: url(/images/web-dev-2.gif);
@@ -140,16 +143,77 @@ button.primary{
 .col-md-6{
     padding:0;
 }
-.eg-bg{
-  background: url(/images/design/emerald-grove/eg-01.jpg) top center/cover;
-  padding: 7vw 28vw;
+img.logo{
+  max-width: 500px;
 }
-.eg-inner{
-  background:#fff url(/images/design/emerald-grove/FullSizeRender-small.png) top center/75% no-repeat;
+img.logo-caya1{
+  max-width: 390px;
+}
+img.logo-caya2{
+  max-width: 762px;
+}
+img.logo-caya3{
+  max-width: 782px;
+}
+img.logo-blueprint{
+  max-width: 587px;
+}
+img.logo-fruitbat{
+  max-width: 738px;
+}
+img.logo-gambol{
+  max-width: 600px;
+}
+img.logo-slow{
+  max-width: 1110px;
+}
+img.logo-banana{
+  max-width: 446px;
+}
+.project-bg{
+  padding: 16vw 24vw;
+}
+.project-inner{
   width: 100%;
   padding-top: 100%;
   border-radius: 50%;
 }
+
+.ace-bg{
+  background: url(/images/design/ace/ace-bg.jpg) top center/cover;
+}
+.banzo-bg{
+  background: url(/images/design/banzo/banzo-01.jpg) top center/cover;
+}
+.blueprint-events-bg{
+  background: url(/images/design/blueprint-events/blueprint-bg.jpg) top center/cover;
+}
+.shuk1-bg{
+  background: url(/images/design/banzo-shuk/shuk-01.jpg) top center/cover;
+}
+.shuk2-bg{
+  background: url(/images/design/banzo-shuk/shuk-02.jpg) top center/cover;
+}
+.caya1-bg{
+  background: url(/images/design/caya-cox/caya-cox-01.jpg) top center/cover;
+}
+.caya2-bg{
+  background: url(/images/design/caya-cox/caya-cox-02.jpg) top center/cover;
+}
+.caya3-bg{
+  background: url(/images/design/caya-cox/caya-cox-03.jpg) top center/cover;
+}
+.eg-bg{
+  background: url(/images/design/emerald-grove/eg-01.jpg) top center/cover;
+}
+.gambol-bg{
+  background: url(/images/art/the-gambol/gambol-bg.jpg) top center/cover;
+}
+.roadview-bg{
+  background: url(/images/design/roadview/roadview.jpg) top center/cover;
+}
+
+
 .project:hover{
     /*opacity: .7;
     transition: .3s;*/
@@ -277,13 +341,15 @@ nav, header{
 
 /* FOOTER STYLES */
 footer{
-    padding: 20vw 2vw;
+    padding: 10vw 2vw;
     text-align: center;
 }
 @media(max-width: 767px) and (min-width: 1px){
+  .project-bg{
+    padding: 16vw 8vw;
+  }
   .eg-bg{
     background: url(/images/design/emerald-grove/eg-01.jpg) top center/cover;
-    padding: 10vw 5vw;
   }
   h1{
     font-size: 3rem;
