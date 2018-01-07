@@ -38,12 +38,12 @@ body{
 .hp-categories{
     padding: 5vw;
 }
-.hp-categories .col{
+.hp-categories .col-sm{
     padding: 5vw 10px;
     text-align: center;
     transition: .3s;
 }
-.hp-categories .col:hover{
+.hp-categories .col-sm:hover{
     transform: scale(1.1);
     z-index: 3;
 }
@@ -354,7 +354,7 @@ footer{
     background: url(/images/design/emerald-grove/eg-01.jpg) top center/cover;
   }
   h1{
-    font-size: 3rem;
+    font-size: 2.6rem;
   }
   h1.project-title{
     margin-top: 112px;
