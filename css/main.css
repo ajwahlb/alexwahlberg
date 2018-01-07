@@ -65,15 +65,6 @@ body{
     overflow: hidden;
     display: block;
 }
-.feature-art{
-    background-image: url(/images/feature-art.jpg);
-}
-.feature-design{
-    background-image: url(/images/feature-design.jpg);
-}
-.feature-web{
-    background-image: url(/images/web-dev-2.gif);
-}
 svg#arrow{
     width: 149px;
 }
@@ -347,7 +338,27 @@ footer{
     padding: 10vw 2vw;
     text-align: center;
 }
+@@media (min-width:768) {
+  .feature-art{
+      background-image: url(/images/feature-art.jpg);
+  }
+  .feature-design{
+      background-image: url(/images/feature-design.jpg);
+  }
+  .feature-web{
+      background-image: url(/images/web-dev-2.gif);
+  }
+}
 @media(max-width: 767px) and (min-width: 1px){
+  .feature-art{
+      background-image: url(/images/feature-art-m.jpg);
+  }
+  .feature-design{
+      background-image: url(/images/feature-design-m.jpg);
+  }
+  .feature-web{
+      background-image: url(/images/web-dev-m.gif);
+  }
   .project-bg{
     padding: 16vw 8vw;
   }
