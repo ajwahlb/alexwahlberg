@@ -1,5 +1,6 @@
 html, body{
     height: 100vh;
+    word-break: break-word;
 }
 body{
     border:15px solid #e7e6d6;
@@ -356,5 +357,13 @@ footer{
   }
   h1.project-title{
     margin-top: 112px;
+  }
+}
+@media(max-width:400px) and (min-width:1px){
+  .navtoggle{
+      width: 320px;
+  }
+  .slideout-menu{
+    z-index: 1000;
   }
 }
