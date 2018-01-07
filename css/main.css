@@ -338,7 +338,7 @@ footer{
     padding: 10vw 2vw;
     text-align: center;
 }
-@@media (min-width:768) {
+@media (min-width:768px) {
   .feature-art{
       background-image: url(/images/feature-art.jpg);
   }
