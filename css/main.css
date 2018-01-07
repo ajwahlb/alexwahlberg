@@ -47,13 +47,13 @@ body{
     transform: scale(1.1);
     z-index: 3;
 }
-.col.hp-web{
+.col-sm.hp-web{
     background-color: #424D79;
 }
-.col.hp-art{
+.col-sm.hp-art{
     background-color: #6379A6;
 }
-.col.hp-photo{
+.col-sm.hp-photo{
     background-color: #86A3C3;
 }
 /* PAGE MAIN FEATURE STYLES*/
@@ -87,6 +87,7 @@ svg#arrow{
 /* GENERAL THEME STYLES */
 h1{
     font-size: 4rem;
+    font-style: italic;
 }
 h1, h2{
     font-weight: bold;
