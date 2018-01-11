@@ -47,14 +47,24 @@ body{
     transform: scale(1.1);
     z-index: 3;
 }
+
 .col-sm.hp-web{
-    background-color: #424D79;
+    background: #424D79;
+}
+.col-sm.hp-web:hover{
+  background:#424D79 url(/images/hp-web-bg.png);
+}
+.col-sm.hp-design{
+    background: #6379A6;
+}
+.col-sm.hp-design:hover{
+    background: #6379A6 url(/images/hp-design-bg.png);
 }
 .col-sm.hp-art{
-    background-color: #6379A6;
+    background: #86A3C3;
 }
-.col-sm.hp-photo{
-    background-color: #86A3C3;
+.col-sm.hp-art:hover{
+    background: #86A3C3 url(/images/hp-art-bg.png);
 }
 /* PAGE MAIN FEATURE STYLES*/
 .full-height {
