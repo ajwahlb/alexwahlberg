@@ -40,7 +40,9 @@ collections:
   web-development:
     output: true
     permalink: /web-development/:path/
-
+  project:
+    output: true
+    permalink: /project/:path/
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
