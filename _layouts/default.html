@@ -24,8 +24,8 @@
 			</div>
 			<div id="thumbnails" class="row">
 				<div class="col">
-
 					<div class="row">
+
 					{% for project in site.work %}
 						<div class="col-lg-4 col-md-6 project" data-filter="{{project.filter}}">
 							<a href="{{site.baseurl}}/work/{{project.slug}}/"><img src="{{site.baseurl}}/images{{project.images}}" width="100%"></a>
@@ -42,8 +42,8 @@
 							</a>
 						</div>
 					{% endfor %}
-					</div>
 
+					</div>
 				</div>
 			</div>
 		</div>
