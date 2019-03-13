@@ -9,41 +9,17 @@ $('.btn-nav, .nav-close').click(function(){
 	$('.slideout-menu').delay( 300 ).toggleClass("slideout-open");
 });
 
-$('#filter li').click(function() {
-	var filterWork = $(this).data('filter');
-	$('#filter li').removeClass('selected');
-	$('#thumbnails .project').hide();
-	$(this).addClass('selected');
-	$('#thumbnails .project[data-filter=' + filterWork + ']').show();
-});
-
 // filter
-// $('#filter li.fl').click(function(){
-// 	$('#filter li').removeClass('selected');
-// 	$('#thumbnails .project').hide();
-// 	$(this).addClass('selected');
-// 	$('#thumbnails .project.logo').show();
-// });
-// $('#filter li.fp').click(function(){
-// 	$('#filter li').removeClass('selected');
-// 	$('#thumbnails .project').hide();
-// 	$(this).addClass('selected');
-// 	$('#thumbnails .project.painting').show();
-// });
-// $('#filter li.fi').click(function(){
-// 	$('#filter li').removeClass('selected');
-// 	$('#thumbnails .project').hide();
-// 	$(this).addClass('selected');
-// 	$('#thumbnails .project.illustration').show();
-// });
-// $('#filter li.fw').click(function(){
-// 	$('#filter li').removeClass('selected');
-// 	$('#thumbnails .project').hide();
-// 	$(this).addClass('selected');
-// 	$('#thumbnails .project.web').show();
-// });
-// $('#filter li.fa').click(function(){
-// 	$('#filter li').removeClass('selected');
-// 	$(this).addClass('selected');
-// 	$('#thumbnails .project').show();
-// });
+$('#filter li').click(function() {
+	if ($(this).hasClass('all')){
+		$('#filter li').removeClass('selected');
+		$(this).addClass('selected');
+		$('#thumbnails .project').show();
+	} else {
+		var filterWork = $(this).data('filter');
+		$('#filter li').removeClass('selected');
+		$('#thumbnails .project').hide();
+		$(this).addClass('selected');
+		$('#thumbnails .project[data-filter=' + filterWork + ']').show();
+	}
+});

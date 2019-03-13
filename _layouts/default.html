@@ -14,7 +14,7 @@
 			<div id="filter" class="row">
 				<div class="col">
 					<ul>
-						<li class="selected" data-filter="all"><a href="javascript:void(0)">All</a></li>
+						<li class="all selected"><a href="javascript:void(0)">All</a></li>
 						<li class="" data-filter="logo"><a href="javascript:void(0)">Logo</a></li>
 						<li class="" data-filter="painting"><a href="javascript:void(0)">Painting</a></li>
 						<li class="" data-filter="illustration"><a href="javascript:void(0)">Illustration</a></li>
@@ -33,7 +33,7 @@
 					{% endfor %}
 
 					{% for project in site.web-development %}
-						<div class="col-lg-4 col-md-6 project {{project.filter}}">
+						<div class="col-lg-4 col-md-6 project" data-filter="{{project.filter}}">
 							<a href="{{project.website}}" target="_blank">
 								<img src="{{site.baseurl}}/images{{project.images}}" width="100%">
 								<div class="btn-center d-flex align-items-center">
