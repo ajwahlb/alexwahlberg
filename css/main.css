@@ -25,6 +25,17 @@ body{
 .principals h3{
     color:#ff5f41;
 }
+
+/* filter */
+#filter ul {
+    list-style: none;
+    display: inline;
+}
+#filter ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
 .headline{
   position: absolute;
   margin: auto;
