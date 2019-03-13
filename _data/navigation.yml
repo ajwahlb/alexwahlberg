@@ -1,11 +1,5 @@
-- title: "Art"
-  href: "art/"
-
-- title: "Design"
-  href: "design/"
-
-- title: "Web"
-  href: "web-development/"
+- title: "About Me"
+  href: "about-me/"
 
 - title: "Contact Me"
   href: "contact-me/"
