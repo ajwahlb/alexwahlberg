@@ -11,21 +11,31 @@ $('.btn-nav, .nav-close').click(function(){
 
 // filter
 $('#filter li.fl').click(function(){
+	$('#filter li').removeClass('selected');
 	$('#thumbnails .project').hide();
+	$(this).addClass('selected');
 	$('#thumbnails .project.logo').show();
 });
 $('#filter li.fp').click(function(){
+	$('#filter li').removeClass('selected');
 	$('#thumbnails .project').hide();
+	$(this).addClass('selected');
 	$('#thumbnails .project.painting').show();
 });
 $('#filter li.fi').click(function(){
+	$('#filter li').removeClass('selected');
 	$('#thumbnails .project').hide();
+	$(this).addClass('selected');
 	$('#thumbnails .project.illustration').show();
 });
 $('#filter li.fw').click(function(){
+	$('#filter li').removeClass('selected');
 	$('#thumbnails .project').hide();
+	$(this).addClass('selected');
 	$('#thumbnails .project.web').show();
 });
 $('#filter li.fa').click(function(){
+	$('#filter li').removeClass('selected');
+	$(this).addClass('selected');
 	$('#thumbnails .project').show();
 });
