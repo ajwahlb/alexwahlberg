@@ -14,12 +14,12 @@ $('#filter li').click(function() {
 	if ($(this).hasClass('all')){
 		$('#filter li').removeClass('selected');
 		$(this).addClass('selected');
-		$('#thumbnails .project').addClass('slide-in-fwd-center');
+		$('#thumbnails .project').show();
 	} else {
 		var filterWork = $(this).data('filter');
 		$('#filter li').removeClass('selected');
 		$('#thumbnails .project').hide();
 		$(this).addClass('selected');
-		$('#thumbnails .project[data-filter=' + filterWork + ']').addClass('slide-in-fwd-center');
+		$('#thumbnails .project[data-filter=' + filterWork + ']').show();
 	}
 });
