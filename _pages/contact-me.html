@@ -6,29 +6,38 @@ permalink: contact-me/
 
 
 <div class="row d-flex justify-content-center">
-		<div class="col-8">
+		<div class="col-6">
 			<h1>Contact me.</h1>
-			<form role="form" action="https://formspree.io/alexjwahlberg@gmail.com" method="POST">
-				<input type="hidden" name="recipient" value="alexjwahlberg#gmail.com">
-				<div class="form-group row">
-    				<div class="col-sm">
-						<input type="text" name="name" class="form-control" id="inputName" placeholder="Your Name">
-					</div>
+
+			<form role="form" action="https://formspree.io/f/xrgrzlpa" method="POST">
+			  <div class="form-group row">
+					<label>
+				    Your Name:
+				    <input type="text" name="name" class="form-control" id="inputName">
+				  </label>
+				</div>
+			  <div class="form-group row">
+					<label>
+				    Your email:
+				    <input type="email" name="_replyto" class="form-control" id="inputEmail">
+				  </label>
+				</div>
+			  <div class="form-group row">
+					<label>
+				    Subject:
+				    <input type="text" name="subject" class="form-control" id="inputSubject">
+				  </label>
 				</div>
 				<div class="form-group row">
-    				<div class="col-sm">
-						<input type="text" name="subject" class="form-control" id="inputSubject" placeholder="Subject">
-					</div>
+				  <label>
+				    Your message:
+				    <textarea name="message" rows="5"></textarea>
+				  </label>
 				</div>
-				<div class="form-group row">
-					<div class="col-sm">
-						<input type="email" name="email" class="form-control" id="inputEmail" placeholder="Your email">
-					</div>
-				</div>
-  				<div class="form-group row">
-					<textarea type="text" name="message" class="form-control" id="contact-message" rows="5" placeholder="What can I help you with?"></textarea>
-  				</div>
-  				<button type="submit" value="send" name="submit" class="btn btn-primary">Submit</button>
+			  <!-- your other form fields go here -->
+
+			  <button type="submit" value="send" name="submit" class="btn btn-primary">Send</button>
 			</form>
+
 		</div>
 	</div>
