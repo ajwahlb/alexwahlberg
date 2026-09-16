@@ -5,6 +5,8 @@
     --black:#222;
     --border-color:#1b1b1b;
     --bg-color:#0e4f6a;
+    --badge-bg:#282828;
+    -off-white:#c0c0c0;
     /* --bg-color: linear-gradient(167deg, #05243b 0%, #32123b 100%); */
 }
 html, body{
@@ -25,6 +27,10 @@ h1, h2, h3, h4, h5, h6,
     font-style: normal;
     font-variation-settings:
     "wdth" 100;
+}
+.badge-color{
+    background-color: var(--badge-bg);
+    color: var(--off-white);
 }
 b,.b{
     color: var(--accent-color);  
@@ -105,11 +111,20 @@ a.project{
     color: inherit;
     background-color: var(--bg-color);
     border: 1px solid var(--border-color);
-    box-shadow: 0px 5px 16px rgba(0, 0, 0, .4);
+    box-shadow: 0px 5px 16px rgba(0, 0, 0, .2);
 }
 a.project:hover,
 a.project:focus-visible{
     border: 1px solid var(--accent-color);
+}
+.card-title {
+    color: var(--off-white);
+    transition: color .3s ease-in-out;
+    font-size: 4rem;
+}
+a.project:hover .card-title{
+    color: var(--accent-color);
+    transition: color .3s ease-in-out;
 }
 .project .card-body{
     display: flex;

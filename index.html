@@ -58,13 +58,17 @@ permalink: /
 				{% for project in site.work %}
 				<a href="{{site.baseurl}}/work/{{project.slug}}/" class="project card mb-3">
 					<div class="row g-0">
-						<div class="col-12 col-md-6">
+						<div class="col-12 col-md-8">
 							<div class="card-body">
 								<h5 class="card-title">{{project.title}}</h5>
-								<p class="card-text">{{project.card-description}}</p>
+								<div class="d-block">
+									{% for tags in project.tags %}
+									<span class="badge badge-color"> {{ tags.badge }}</span>
+									{% endfor %}
+								</div>
 							</div>
 						</div>
-						<div class="col-12 col-md-6">
+						<div class="col-12 col-md-4">
 							<img src="{{site.baseurl}}/images{{project.images}}" class="project-card-img rounded-end" alt="...">
 						</div>
 					</div>
