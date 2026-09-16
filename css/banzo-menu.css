@@ -1,0 +1,53 @@
+/* menu styles */
+.white{
+  background-color: #fff;
+}
+#banzo-menu{
+  background-color: #252424;
+  color: #fff;
+  padding: 30px;
+  margin-bottom: 20px;
+}
+#banzo-menu .row{
+  padding-bottom: 20px;
+}
+.menu-section{ z-index:10; position:relative;}
+.menu-section-inner{
+	max-width:1120px;
+	margin:80px auto;
+	background-color:#fff;
+	position:relative;
+}
+.menu-headline{
+	background-color:#ffcc00;
+	padding:8px 15px 5px;
+	font-size:32px;
+	text-transform:uppercase;
+	display:inline-block;
+	color:#000;
+}
+.menu-ooo{font-size: 12px; margin-bottom: 0;}
+.menu-title{font-size:18px; font-weight: bold; margin-bottom: 8px; color: #ffcc00; line-height: 1.2;}
+.menu-item{ line-height:.8; margin:20px 0; border-left: 1px solid #fff; padding-left: 10px;}
+.menu-descript{ font-size:16px; line-height:1.2;}
+p.subtext{color: #ffcc00;}
+.menu-ooo vegan{
+  line-height: 1.5;
+}
+vegan {
+  background-color: white;
+  height: 18px;
+  width: 18px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 50%;
+  color: black;
+  font-weight: normal;
+  line-height: 1;
+}
+/* catering menu */
+.cater-title {
+  font-size: 24px;
+  font-style: italic;
+  font-weight: bold;
+}

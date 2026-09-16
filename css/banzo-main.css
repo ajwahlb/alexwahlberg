@@ -1,0 +1,294 @@
+@import "nav.css";
+@import "menu.css";
+@import "footer.css";
+@import "fly-in.css";
+
+html, body{ height: 100vh; }
+a{color:#006ADB;}
+a.order, a.order:hover{
+  color: #fff;
+}
+p{line-height: 1.2;}
+.full-height {
+    background-position: center center;
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+    display: block;
+}
+p.hours {
+  margin-bottom: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 250px;
+  border-bottom: 1px dotted #ccc;
+}
+.bg-medium-light{
+  background-color: #e9eef3;
+}
+.bg-dark-light{
+  background-color: #dae1e9;
+}
+.delivery,
+.pickup{
+  display: none;
+}
+.covid19 {
+    margin-top: 71px;
+}
+@media(min-width: 768px){
+    .feature{
+        background-image:url(/images/banzo/big-banzo-3.jpg);
+    }
+    .banzo-feature{
+        background-image:url(/images/banzo/banzo-1.jpg);
+    }
+    .carts-feature{
+        background-image:url(/images/banzo/foodcart-2.jpg);
+    }
+}
+@media(max-width: 767px) and (min-width: 1px){
+    .feature{
+        background-image:url(/images/banzo/big-banzo-3-m.jpg);
+    }
+    .banzo-feature{
+        background-image:url(/images/banzo/banzo-1-m.jpg);
+    }
+    .carts-feature{
+        background-image:url(/images/banzo/foodcart-2-m.jpg);
+    }
+    #contact .restaurant,
+    #contact .carts{
+      -webkit-filter: unset; /* Safari 6.0 - 9.0 */
+      filter: unset;
+    }
+}
+.row.oops-lax-1{
+  background-image: url(/images/banzo/banzo-2.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  height: 40vh;
+}
+.row.oops-lax-2{
+  background-image: url(/images/banzo/banzo-4.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  height: 40vh;
+}
+.row.oops-lax-3{
+  background-image: url(/images/banzo/foodcart-1.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  height: 40vh;
+}
+.row.oops-lax-4{
+  background-image: url(/images/banzo/foodcart-4.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  height: 40vh;
+}
+.row.oops-lax-5{
+  background-image: url(/images/banzo/foodcart-2.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  height: 40vh;
+}
+.row.oops-lax-6{
+  background-image: url(/images/banzo/banzo-3.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  height: 40vh;
+}
+.btn-primary:hover {
+  color: #000;
+  background-color: #a1e33e;
+  border-color: #a1e33e;
+}
+.btn-primary {
+    color: #000;
+    background-color: #ccff7f;
+    border-color: #ccff7f;
+}
+.btn-primary.active,
+.btn-primary:active,
+.show>.btn-primary.dropdown-toggle {
+  background-color: #87d217;
+  border-color: #87d217;
+}
+.dropdown-item:focus, .dropdown-item:hover {
+    color: #16181b;
+    text-decoration: underline;
+    background-color: #e4e4e4;
+}
+/* homepage hover images */
+.hover-img,
+.hp-restaurant:hover .default-img,
+.hp-cart:hover .default-img {
+  display: none;
+}
+.hp-restaurant:hover .hover-img,
+.hp-cart:hover .hover-img {
+  display: inline-block;
+}
+
+#twitter{
+  padding: 50px;
+  background: url(/images/banzo/twitter-background_01.jpg) repeat top center;
+}
+
+.restaurant{
+  background-image: url(/images/banzo/banzo-3.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  /* -webkit-filter: grayscale(100%);
+  filter: grayscale(100%); */
+}
+#contact .carts{
+  background-image: url(/images/banzo/foodcart-2.jpg);
+  background-size: cover;
+
+}
+@media(max-width: 767px) and (min-width: 1px){
+    #contact .restaurant,
+    #contact .carts{
+      -webkit-filter: unset; /* Safari 6.0 - 9.0 */
+      filter: unset;
+    }
+}
+
+.fab {
+  margin: 0 10px;
+  font-size: 25px;
+}
+.hp-pages ul{
+  padding: 0;
+}
+.hp-pages li{
+    list-style: none;
+    display: table-cell;
+    max-width: 210px;
+    color: #fff;
+    opacity:1;
+    -webkit-transition: opacity .3s ease-in-out;
+    -moz-transition: opacity .3s ease-in-out;
+    transition: opacity .3s ease-in-out;
+}
+.hp-pages:hover li,
+.hp-pages li:nth-child(1):hover + li{
+    opacity:.4;
+}
+.hp-pages li:hover,
+.hp-pages li:hover ~ li{
+    opacity: 1;
+}
+
+.feature::before,
+.banzo-feature::before,
+.carts-feature::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+}
+.title{
+    border-top: 3px solid #000;
+    border-bottom: 3px solid #000;
+    padding: 1vw 0;
+    margin-bottom: 2vw;
+}
+.title.menu{
+  margin-bottom: 0;
+}
+
+.map-overlay {
+    background: transparent;
+    position: absolute;
+    width: 100%;
+    height: 0;
+    padding-bottom: 44.25%;
+    z-index: 10;
+}
+.full-height a.feature-arrow-down {
+    color: white;
+    display: inline-block;
+    bottom:30px;
+    position: absolute;
+    width: 100%;
+    margin:auto;
+    font-size: 4rem;
+    text-align: center;
+}
+.article{
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    font-size: 1.5rem;
+    padding: 7vw 0;
+}
+@media (max-width: 768px) and (min-width: 1px){
+    .article{
+        text-align: center;
+        width: 100%;
+        margin: auto;
+        font-size: 1.2rem;
+        padding: 7vw 10px;
+    }
+}
+.blurp{
+    background-image: url(/images/banzo/shuk-2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+label {
+    margin-bottom: .2rem;
+}
+.no-pad{
+    padding:0;
+}
+.pad02vw{
+    padding: 0 2vw;
+}
+.pad6vw{
+    padding: 6vw 0;
+}
+.form-row{
+    margin-bottom: 10px;
+}
+.block{
+    margin: 1px 1px 0 0;
+    padding: 0;
+}
+.block:last-child{
+    margin: 1px 0 0 0;
+    padding: 0;
+}
+
+.center{
+    text-align: center;
+}
+@media(max-width: 575px) and (min-width: 1px){
+    .form-row .col-sm:first-child{
+        padding-bottom: 10px;
+    }
+    h2{
+        font-size: 1.6rem;
+    }
+    .mr-auto{
+        width: 100%;
+    }
+    nav.hpv2 .mr-auto{
+        width: auto;
+    }
+    .p-2{
+        padding: .2rem .5rem!important;
+    }
+    #navbar{
+        font-size: .85rem;
+    }
+}

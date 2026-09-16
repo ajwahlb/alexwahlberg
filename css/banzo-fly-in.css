@@ -1,0 +1,56 @@
+[class*=js-] {
+    cursor: pointer;
+}
+#fly-in-menu,
+#insta-menu{
+  background-color: #333;
+  color: #ffd600;
+}
+#fly-in-menu .left-container{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#fly-in-menu .left-container a{
+  color: #ffd600;
+}
+#fly-in-menu .contact{
+  padding: 10px 10px 10px 40px;
+  background-color: #000;
+  font-size: 18px;
+}
+#fly-in-menu .slideOut{
+  padding: 10px;
+  font-size: 3rem;
+  cursor: pointer;
+}
+#fly-in-menu ul li {
+  padding: 10px 0 10px 30px;
+  font-size: 20px;
+}
+#fly-in-menu ul li:hover {
+  background-color: #000;
+}
+#insta-menu .slideOut{
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  font-size: 3rem;
+  cursor: pointer;
+}
+#fly-in-menu ul{
+  list-style: none;
+  margin:0;
+  padding: 0;
+}
+
+#insta-menu ul{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  margin:0;
+}

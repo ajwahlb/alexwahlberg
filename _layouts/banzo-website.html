@@ -1,0 +1,283 @@
+<html lang="en">
+
+{% include banzo-head.html %}
+
+<body>
+
+	{% include banzo-fixedNav.html %}
+
+	<div canvas="container" class="page-content">
+		<div class="wrap">
+			{{ content }}
+			{% include banzo-footer.html %}
+		</div>
+	</div>
+
+	<!-- Left slide in menu -->
+	{% include banzo-slide-in-nav.html %}
+
+	<!-- Order Catering Modal -->
+	<div class="modal fade" id="orderCatering" tabindex="-1" aria-labelledby="orderCateringLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h2 class="modal-title" id="orderCateringLabel">Order Catering</h2>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<p>Tell us about your event! We'll take care of the rest.</p>
+					<ul>
+						<li>No requests are confirmed until approval is received from our catering team.</li>
+						<li>48 hour notice required. If request is for sooner, call the restaurant at <a
+								href="tel:+16084412002">(608) 441-2002</a>.</li>
+						<li>Response within 2 business days.</li>
+						<li>DO NOT submit duplicate requests via email or phone.</li>
+					</ul>
+
+					<div class="row">
+						<div class="col">
+							<div class="row">
+								<div class="col">
+									<div class="form-group">
+										<input type="text" name="_gotcha" style="display:none" />
+										<div class="form-check">
+											<input class="form-check-input" type="radio" name="pickup-delivery"
+												id="pickup" value="pickup">
+											<label class="form-check-label" for="pickup">
+												<h4>Pick Up</h4>
+											</label>
+										</div>
+										<div class="form-check">
+											<input class="form-check-input" type="radio" name="pickup-delivery"
+												id="delivery" value="delivery">
+											<label class="form-check-label" for="delivery">
+												<h4>Delivery</h4>
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row pickup boxy">
+								<div class="col-12">
+									<div class="form-group">
+										<label class="sr-only" for="pickup-time">Requested Pick-up Time</label>
+										<input type="text" name="pickup-time" class="form-control" id="pickup-time"
+											placeholder="Requested Pick-up Time">
+									</div>
+								</div>
+							</div>
+							<div class="row delivery boxy">
+								<div class="col-12">
+									<div class="form-group">
+										<label class="sr-only" for="delivery-time">Requested Delivery Time</label>
+										<input type="text" name="delivery-time" class="form-control" id="delivery-time"
+											placeholder="Requested Delivery Time">
+									</div>
+								</div>
+								<div class="col-12">
+									<div class="row bg-light pt-3">
+										<div class="col-12">
+											<h5>Your Address</h5>
+										</div>
+										<div class="col-12 col-sm-6">
+											<div class="form-group">
+												<label class="sr-only" for="streetAddress">Street Address</label>
+												<input type="text" name="streetAddress" class="form-control"
+													id="streetAddress" placeholder="Street Address">
+											</div>
+										</div>
+										<div class="col-12 col-sm-3">
+											<div class="form-group">
+												<label class="sr-only" for="city">City</label>
+												<input type="text" name="city" class="form-control" id="city"
+													placeholder="City">
+											</div>
+										</div>
+										<div class="col-12 col-sm-3">
+											<div class="form-group">
+												<label class="sr-only" for="zip">Zip</label>
+												<input type="text" name="zip" class="form-control" id="zip"
+													placeholder="Zip">
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="row bg-medium-light pt-3">
+								<div class="col-12">
+									<h5>Your Details</h5>
+								</div>
+								<div class="col-12 col-sm-6">
+									<div class="form-group">
+										<label class="sr-only" for="inputName">Your Name</label>
+										<input type="text" name="name" class="form-control" id="inputName"
+											placeholder="Your Name">
+									</div>
+									<div class="form-group">
+										<label class="sr-only" for="inputPhone">Phone Number</label>
+										<input type="tel" name="phone-number" class="form-control" id="inputPhone"
+											placeholder="Phone Number">
+									</div>
+									<div class="form-group">
+										<label class="sr-only" for="inputDate">Event Date</label>
+										<input type="text" name="date" class="form-control" id="inputDate"
+											placeholder="Event Date">
+									</div>
+								</div>
+								<div class="col-12 col-sm-6">
+									<div class="form-group">
+										<label class="sr-only" for="inputTime">Event time</label>
+										<input type="text" name="time" class="form-control" id="inputTime"
+											placeholder="Event Time">
+									</div>
+									<div class="form-group">
+										<label class="sr-only" for="inputGuests">Number of guests</label>
+										<input type="text" name="guest-number" class="form-control" id="inputGuests"
+											placeholder="Number of Guests">
+									</div>
+									<div class="form-group">
+										<label class="sr-only" for="inputEmail">Your email</label>
+										<input type="email" name="email" class="form-control" id="inputEmail"
+											placeholder="Your Email">
+									</div>
+								</div>
+							</div>
+							<div class="row bg-dark-light pt-3">
+								<div class="col-12">
+									<h5>Your Order</h5>
+								</div>
+								<div class="col-12 form-group">
+									<label class="sr-only" for="requestedOrder">Requested Order</label>
+									<textarea type="text" name="requested-order" class="form-control"
+										id="requestedOrder" rows="3"
+										placeholder="Do you want a Banzo Bar, sampler platters, buffet, full dinner or apps..? What are you thinking?"></textarea>
+								</div>
+								<div class="col-12 form-group">
+									<label class="sr-only" for="contact-message">Any additional information</label>
+									<textarea type="text" placeholder="Any additional information" name="aditional-info"
+										class="form-control" id="contact-message" rows="1"></textarea>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Request Food Cart -->
+	<div class="modal fade" id="foodCartCatering" tabindex="-1" aria-labelledby="cartCataringLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h2 class="modal-title" id="cartCataringLabel">Request the Food Cart</h2>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<p>Request the Banzo Food Cart to cater your event!</p>
+					<ul>
+						<li>We need at LEAST 2 weeks notice in advance.</li>
+						<li>Response within 7 days.</li>
+					</ul>
+
+					<div class="row">
+						<div class="col">
+								<div class="row bg-light pt-3 justify-content-center">
+									<div class="col-12 col-sm-8 col-md-6">
+										<div class="row">
+											<div class="col-12">
+												<h5>Your Details</h5>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-12">
+												<input type="text" name="_gotcha" style="display:none" />
+												<div class="form-group">
+													<label class="sr-only" for="inputName">Your Name</label>
+													<input type="text" name="name" class="form-control" id="inputName"
+														placeholder="Your Name">
+												</div>
+												<div class="form-group">
+													<label class="sr-only" for="inputPhone">Phone Number</label>
+													<input type="tel" name="phone-number" class="form-control"
+														id="inputPhone" placeholder="Phone Number">
+												</div>
+												<div class="form-group">
+													<label class="sr-only" for="inputEmail">Your email</label>
+													<input type="email" name="email" class="form-control"
+														id="inputEmail" placeholder="Your Email">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row bg-medium-light pt-3 justify-content-center">
+									<div class="col-12 col-sm-8 col-md-6">
+										<div class="row">
+											<div class="col-12">
+												<h5>Party Details</h5>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-12">
+												<div class="form-group">
+													<label class="sr-only" for="streetAddress">Street Address</label>
+													<input type="text" name="streetAddress" class="form-control"
+														id="streetAddress" placeholder="Street Address">
+												</div>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-12 col-sm-6">
+												<div class="form-group">
+													<label class="sr-only" for="city">City</label>
+													<input type="text" name="city" class="form-control" id="city"
+														placeholder="City">
+												</div>
+											</div>
+											<div class="col-12 col-sm-6">
+												<div class="form-group">
+													<label class="sr-only" for="zip">Zip</label>
+													<input type="text" name="zip" class="form-control" id="zip"
+														placeholder="Zip">
+												</div>
+											</div>
+										</div>
+										<div class="row">
+											<div class="col-12">
+												<div class="form-group">
+													<label class="sr-only" for="inputDate">Event Date</label>
+													<input type="text" name="date" class="form-control" id="inputDate"
+														placeholder="Event Date">
+												</div>
+												<div class="form-group">
+													<label class="sr-only" for="inputGuests">Number of guests</label>
+													<input type="text" name="guest-number" class="form-control"
+														id="inputGuests" placeholder="Number of Guests">
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+						</div>
+					</div>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

@@ -3,50 +3,11 @@
 	{% include head.html %}
 
 	<body>
-		{% include side-nav.html %}
-		<div class="container-fluid center">
-			{% include header.html %}
-			<div>
-				{{content}}
-			</div>
-		</div>
-		<div class="container">
-			<div id="filter" class="row">
-				<div class="col">
-					<ul>
-						<li class="all selected"><a href="javascript:void(0)">All</a></li>
-						<li class="" data-filter="logo"><a href="javascript:void(0)">Logo</a></li>
-						<li class="" data-filter="painting"><a href="javascript:void(0)">Painting</a></li>
-						<li class="" data-filter="illustration"><a href="javascript:void(0)">Illustration</a></li>
-						<li class="" data-filter="web"><a href="javascript:void(0)">Web</a></li>
-					</ul>
-				</div>
-			</div>
-			<div id="thumbnails" class="row">
-				<div class="col">
-					<div class="row">
-
-					{% for project in site.work %}
-						<div class="col-lg-4 col-6 project" data-filter="{{project.filter}}">
-							<a href="{{site.baseurl}}/work/{{project.slug}}/"><img src="{{site.baseurl}}/images{{project.images}}" width="100%"></a>
-						</div>
-					{% endfor %}
-
-					{% for project in site.web-development %}
-						<div class="col-lg-4 col-6 project" data-filter="{{project.filter}}">
-							<a href="{{project.website}}" target="_blank">
-								<img src="{{site.baseurl}}/images{{project.images}}" width="100%">
-								<div class="btn-center d-flex align-items-center">
-									<button type="button" class="btn btn-warning">Visit Website</button>
-								</div>
-							</a>
-						</div>
-					{% endfor %}
-
-					</div>
-				</div>
-			</div>
-		</div>
+		{% include header.html %}
+		<main>
+			{{content}}
+		</main>
+		
 
 	{% include footer.html %}
 	</body>

@@ -1,0 +1,140 @@
+:root{
+    --background-color:#162536;
+    --accent-color:#FF7602;
+    --white:#fff;
+    --black:#222;
+    --border-color:#1b1b1b;
+    --bg-color:#0e4f6a;
+    /* --bg-color: linear-gradient(167deg, #05243b 0%, #32123b 100%); */
+}
+html, body{
+    background-color: var(--bg-color);
+    color: var(--white);
+    font-family: Arial, Helvetica, sans-serif;
+}
+main{
+    margin-bottom: 400px;
+    padding-bottom: 6rem;
+    box-shadow: 0px 14px 16px rgba(0, 0, 0, .3);
+}
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6{
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+}
+b,.b{
+    color: var(--accent-color);  
+}
+.overflow-hidden{
+    overflow: hidden;
+}
+#bg-pic{
+    position:relative;
+    background-image: url('/images/20240630-wahlberg-058.png');
+    background-position: right 40% top 0;
+    background-repeat: no-repeat;
+    background-size:500px;
+
+}
+.img-fixed{
+    position: relative;
+    display: block;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.whs-research-image{
+    background-image: url('/images/whs/whs-research.png');
+}
+.h-400{
+    height: 400px;
+}
+section{
+    margin-top: 6rem;
+}
+/* navbar styles */
+header nav .navbar-brand{
+    color: var(--accent-color);
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+header nav .navbar-brand:hover{
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+header nav{
+    background: transparent;
+    border-bottom: 1px solid var(--border-color);
+}
+header nav a.nav-link{
+    color: var(--white);
+}
+header nav a.nav-link:hover{
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+/* skills table styles */
+table.table {
+    /* background: transparent; */
+    --bs-table-bg: transparent;
+    --bs-table-color: var(--white);
+    --bs-table-border-color: var(--border-color);
+}
+.table>:not(caption)>*>*{
+    color: unset;
+}
+.table thead{
+    font-family: "Bricolage Grotesque", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: var(--accent-color);
+    font-size: 1.3rem;
+}
+.table-hover>tbody>tr:hover>*{
+    --bs-table-color-state: var(--white);
+}
+/* project card styles */
+a.project{
+    text-decoration: none;
+    color: inherit;
+    background-color: var(--bg-color);
+    border: 1px solid var(--border-color);
+    box-shadow: 0px 5px 16px rgba(0, 0, 0, .4);
+}
+a.project:hover,
+a.project:focus-visible{
+    border: 1px solid var(--accent-color);
+}
+.project .card-body{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    padding: 2rem;
+}
+.project-card-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    aspect-ratio: 16 / 9;
+}
+@media (max-width: 768px) {
+    .project .row{
+        flex-direction: column;
+    }
+}
+footer{
+    position:fixed;
+    display:block;
+    background-color: #2c2c2c;
+    bottom:0;
+    width:100%; 
+    z-index:-1;
+    height:400px;
+}

@@ -19,7 +19,6 @@ description: >- # this means to ignore newlines until "baseurl:"
   Professional Web Developer, Artist, Poet. Well, not a poet. My site shows you some of my skills and services. Contact me for your web, art/creative needs!
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://www.alexwahlberg.com/" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
 github_username:  jekyll
 
 # Build settings

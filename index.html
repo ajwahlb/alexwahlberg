@@ -3,14 +3,76 @@ layout: default
 title: "Home"
 permalink: /
 ---
-<div class="full-height feature-web">
-	<div class="headline center row justify-content-center">
-		<div class="col-sm-offset-3 col-sm-6 nameplate">
-			<h1>Alex Wahlberg</h1>
-			<h3 class="text-white">I create creative things.</h3>
+<div id="bg-pic">
+
+	<section id="intro" class="container-xl">
+		<div class="row">
+			<div class="col-12 col-sm-8 col-md-5">
+				<h1 id="">Oh Hi, I'm Alex!</h1>
+				<p class="lead">Lead Front-End Developer with 15 years of experience specializing in scalable
+					architecture, design systems, and advanced web accessibility. Expert in UX/UI design and front-end
+					development, with a specialized focus on creating high-performance, inclusive web solutions. </p>
+			</div>
 		</div>
-	</div>
-	<div class="arrow">
-		<svg id="arrow" data-name="arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 189.96 97"><defs><style>.arrow1{fill:#4e4e4e;}.arrow2{fill:#ff5f41;}</style></defs><title>arrow</title><polygon class="arrow1" points="189.96 97 0 97 94.98 0 189.96 97"/><polygon class="arrow2" points="117.09 61.02 111.56 55.5 99.01 68.05 99.01 21.79 91.2 21.79 91.2 68.3 78.39 55.5 72.87 61.02 94.97 83.11 94.98 83.1 94.99 83.11 117.09 61.02"/></svg>
-	</div>
+	</section>
+	
+	<section id="skills" class="container-xl">
+		<div class="row">
+			<div class="col-12">
+				<h2 id="skills">Skills</h2>
+				<table class="table table-hover text-center">
+					<thead>
+						<tr>
+							<th scope="col">Technical Leadership</th>
+							<th scope="col">Accessibility & Standards</th>
+							<th scope="col">Design Systems</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>HTML5 / CSS3 / JS</td>
+							<td>WCAG 2.1/2.2 (AA) Compliance</td>
+							<td>UX/UI Architecture</td>
+						</tr>
+						<tr>
+							<td>Responsive Architecture</td>
+							<td>Screen Reader Optimization</td>
+							<td>Component Libraries</td>
+						</tr>
+						<tr>
+							<td>Figma/Adobe CC</td>
+							<td>Keyboard Accessible</td>
+							<td>Wireframing/Prototyping</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+	</section>
+
+	<section id="work" class="container-xl">
+		<div class="row">
+			<div class="col-12">
+				<h2 id="work">Work</h2>
+
+				{% for project in site.work %}
+				<a href="{{site.baseurl}}/work/{{project.slug}}/" class="project card mb-3">
+					<div class="row g-0">
+						<div class="col-12 col-md-6">
+							<div class="card-body">
+								<h5 class="card-title">{{project.title}}</h5>
+								<p class="card-text">{{project.card-description}}</p>
+							</div>
+						</div>
+						<div class="col-12 col-md-6">
+							<img src="{{site.baseurl}}/images{{project.images}}" class="project-card-img rounded-end" alt="...">
+						</div>
+					</div>
+				</a>
+				{% endfor %}
+
+			</div>
+		</div>
+	</section>
+
 </div>

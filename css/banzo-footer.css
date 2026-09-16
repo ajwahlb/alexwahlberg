@@ -1,0 +1,33 @@
+/* FOOTER */
+footer.site-footer{
+    background-image: linear-gradient(to top, #585858 0%, #4e6775 100%);
+    color:#fff;
+}
+footer.site-footer ul.social-media-list{
+    padding:0;
+}
+footer.site-footer ul.social-media-list li,
+.banzo-social .fa{
+    display: inline-block;
+    font-size: 2rem;
+    margin-right:15px;
+}
+footer.site-footer ul.social-media-list li a,
+.btn-link{
+    color: #fff;
+}
+footer.site-footer ul.social-media-list li a:hover,
+.btn-link:hover{
+    color: inherit;
+    text-shadow:-3px 2px 0px #000;
+}
+.modal-dialog {
+    max-width: 800px;
+    margin: 30px auto;
+    color:#000;
+}
+@media(max-width: 767px) and (min-width: 1px){
+    footer.site-footer{
+        text-align: center;
+    }
+}
