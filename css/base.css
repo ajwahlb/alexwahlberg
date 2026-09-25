@@ -1,18 +1,35 @@
 :root{
     --background-color:#162536;
-    --accent-color:#FF7602;
+    --accent-color:#FFA352;
     --white:#fff;
     --black:#222;
     --border-color:#1b1b1b;
-    --bg-color:#0e4f6a;
-    --badge-bg:#282828;
-    -off-white:#c0c0c0;
-    /* --bg-color: linear-gradient(167deg, #05243b 0%, #32123b 100%); */
+    --hp-project:#003657;
+    --badge-bg:#191919;
+    --off-white:#c0c0c0;
+    --bg-color:#003d63;
+    --bg-gradient: linear-gradient(167deg, #035a66 0%, #003d63 100%);
+}
+@media (min-width: 1400px) {
+  .container,
+  .container-sm,
+  .container-md,
+  .container-lg,
+  .container-xl,
+  .container-xxl {
+    max-width: 1600px !important;
+  }
 }
 html, body{
     background-color: var(--bg-color);
     color: var(--white);
     font-family: Arial, Helvetica, sans-serif;
+}
+a:focus-visible,
+button:focus-visible,
+.nav-link:focus-visible {
+  outline: 1px solid var(--accent-color);
+  outline-offset: 3px;
 }
 main{
     margin-bottom: 400px;
@@ -54,6 +71,9 @@ b,.b{
     background-size: cover;
     background-repeat: no-repeat;
 }
+img.rotate {
+  transform: rotate(-8deg);
+}
 .whs-research-image{
     background-image: url('/images/whs/whs-research.png');
 }
@@ -85,6 +105,11 @@ header nav a.nav-link:hover{
     color: var(--accent-color);
     text-decoration: underline;
 }
+.navbar-brand:focus,
+.nav-link:focus {
+    color: var(--white);
+}
+.badge{font-weight: normal;}
 /* skills table styles */
 table.table {
     /* background: transparent; */
@@ -109,22 +134,23 @@ table.table {
 a.project{
     text-decoration: none;
     color: inherit;
-    background-color: var(--bg-color);
+    background-color: var(--hp-project);
     border: 1px solid var(--border-color);
-    box-shadow: 0px 5px 16px rgba(0, 0, 0, .2);
+    /* box-shadow: 0px 5px 16px rgba(0, 0, 0, .2); */
 }
 a.project:hover,
 a.project:focus-visible{
-    border: 1px solid var(--accent-color);
+    outline: 1px solid var(--accent-color);
 }
 .card-title {
-    color: var(--off-white);
     transition: color .3s ease-in-out;
     font-size: 4rem;
 }
-a.project:hover .card-title{
+a.project:hover .card-title,
+a.project:focus-visible .card-title{
     color: var(--accent-color);
     transition: color .3s ease-in-out;
+    text-shadow: -3px 3px 0 #2c2c2c;
 }
 .project .card-body{
     display: flex;
