@@ -1,7 +1,7 @@
 ---
-layout: default
+layout: project
 title: "Department of Transportation - MV1 Form"
-tags: 
+tags:
 - badge: UX/UI Design
 - badge: Web Development
 img: /mv1/mv1-hp.png
@@ -10,7 +10,7 @@ img: /mv1/mv1-hp.png
 <div class="container-xl">
   <div class="row">
     <div class="col-12 text-center">
-      <h1 class="project-title">Department of Transportation - MV1 Form</h1>
+      <h1 class="project-title py-3">Department of Transportation - MV1 Form</h1>
     </div>
   </div>
 </div>
@@ -18,11 +18,37 @@ img: /mv1/mv1-hp.png
 <div class="container-xxl">
   <div class="row">
     <div class="col-12 rounded">
-      <img src="/images/mv1/mv1-form.png" width="100%">
+      <img src="{{ '/images/mv1/mv1-form.png' | relative_url }}" width="100%">
     </div>
   </div>
 </div>
 
+<div class="container-xxl my-5">
+  <div class="row">
+    <div class="col-12">
+      <div class="vp" data-video-player>
+        <video preload="metadata" playsinline muted poster="{{ '/media/mv1.jpg' | relative_url }}" aria-label="DSPS walkthrough">
+          <!-- <source src="{{ '/media/mv1.webm' | relative_url }}" type="video/webm"> -->
+          <source src="{{ '/media/mv1.mp4' | relative_url }}" type="video/mp4">
+        </video>
 
+        <div class="vp-controls">
+          <button type="button" class="vp-toggle" aria-label="Play">
+            <svg class="vp-icon-play" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+              <path d="M8 5v14l11-7z" fill="currentColor" />
+            </svg>
+            <svg class="vp-icon-pause" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" hidden>
+              <path d="M6
+  5h4v14H6zM14 5h4v14h-4z" fill="currentColor" />
+            </svg>
+          </button>
 
+          <input type="range" class="vp-seek" min="0" max="100" step="0.1" value="0" aria-label="Video timeline"
+            aria-valuetext="0:00 of 0:00">
 
+          <span class="vp-time" aria-hidden="true">0:00 / 0:00</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

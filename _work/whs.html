@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: project
 title: "Wisconsin Historical Society"
 tags: 
 - badge: Component Library
@@ -19,11 +19,11 @@ tags:
 <div class="container-xl py-5">
   <div class="row justify-content-center">
     <div class="col-auto">
-      <img src="/images/whs/whs-logo-old.png" width="300px" height="255px" class="logo"
+      <img src="{{ '/images/whs/whs-logo-old.png' | relative_url }}" width="300px" height="255px" class="logo"
         alt="Wisconsin Historical Society's old logo">
     </div>
     <div class="col-auto">
-      <img src="/images/whs/whs-logo-mobile.svg" width="265px" height="265px" class="logo"
+      <img src="{{ '/images/whs/whs-logo-mobile.svg' | relative_url }}" width="265px" height="265px" class="logo"
         alt="Wisconsin Historical Society's new logo">
     </div>
   </div>
@@ -69,7 +69,7 @@ tags:
   <div class="row">
     <div class="col-6 overflow-hidden h-400">
       <a href="#" data-bs-toggle="modal" data-bs-target="#wireframe01">
-        <img src="/images/whs/whs-wireframe-01.png" width="100%" alt="page wireframe">
+        <img src="{{ '/images/whs/whs-wireframe-01.png' | relative_url }}" width="100%" alt="page wireframe">
       </a>
       <!-- Modal -->
       <div class="modal fade" id="wireframe01" tabindex="-1" aria-labelledby="wireframe01Label" aria-hidden="true">
@@ -80,7 +80,7 @@ tags:
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-              <img src="/images/whs/02-WHS-Biography-Template.png" width="100%" alt="page wireframe">
+              <img src="{{ '/images/whs/02-WHS-Biography-Template.png' | relative_url }}" width="100%" alt="page wireframe">
             </div>
           </div>
         </div>
@@ -88,7 +88,7 @@ tags:
     </div>
     <div class="col-6 overflow-hidden h-400">
       <a href="#" data-bs-toggle="modal" data-bs-target="#wireframe02">
-        <img src="/images/whs/whs-wireframe-02.png" width="100%" alt="page wireframe">
+        <img src="{{ '/images/whs/whs-wireframe-02.png' | relative_url }}" width="100%" alt="page wireframe">
       </a>
       <!-- Modal -->
       <div class="modal fade" id="wireframe02" tabindex="-1" aria-labelledby="wireframe02Label" aria-hidden="true">
@@ -99,7 +99,7 @@ tags:
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-              <img src="/images/whs/06-WHS-Historic-Place-or-region-Template.png" width="100%" alt="page wireframe">
+              <img src="{{ '/images/whs/06-WHS-Historic-Place-or-region-Template.png' | relative_url }}" width="100%" alt="page wireframe">
             </div>
           </div>
         </div>
@@ -129,6 +129,36 @@ tags:
         <div class="col-12 col-md-4">
           <p class="h4">120</p>
           <p>Custom components</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-xxl my-5">
+  <div class="row">
+    <div class="col-12">
+      <div class="vp" data-video-player>
+        <video preload="metadata" playsinline muted poster="{{ '/media/whs.jpg' | relative_url }}" aria-label="Historical Society walkthrough">
+          <!-- <source src="{{ '/media/whs.webm' | relative_url }}" type="video/webm"> -->
+          <source src="{{ '/media/whs.mp4' | relative_url }}" type="video/mp4">
+        </video>
+
+        <div class="vp-controls">
+          <button type="button" class="vp-toggle" aria-label="Play">
+            <svg class="vp-icon-play" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+              <path d="M8 5v14l11-7z" fill="currentColor" />
+            </svg>
+            <svg class="vp-icon-pause" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" hidden>
+              <path d="M6
+  5h4v14H6zM14 5h4v14h-4z" fill="currentColor" />
+            </svg>
+          </button>
+
+          <input type="range" class="vp-seek" min="0" max="100" step="0.1" value="0" aria-label="Video timeline"
+            aria-valuetext="0:00 of 0:00">
+
+          <span class="vp-time" aria-hidden="true">0:00 / 0:00</span>
         </div>
       </div>
     </div>

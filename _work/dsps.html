@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: project
 title: "Department of Safety and Professional Services"
 tags: 
 - badge: Logo / Branding
@@ -10,32 +10,52 @@ img: /dsps/dsps-hp.png
 
 <div class="container-xl">
   <div class="row">
-    <div class="col-12">
-      <h1 class="project-title">Project Title Example</h1>
+    <div class="col-12 text-center">
+      <h1 class="project-title py-3">Wisconsin Department of Safety and Professional Services</h1>
     </div>
   </div>
 </div>
 
-<div class="container-fluid">
-  <div class="row justify-content-center">
-    <div class="col-12 p-0">
-      <img src="/images/design/banzo-shuk/shuk-01.png" width="100%" class="logo" alt="Banzo Shuk">
+<div class="container-xxl">
+  <div class="row">
+    <div class="col-12 text-center">
+      <h2>~ Brand Concepts ~</h2>
     </div>
-  </div>
-</div>
-
-<div class="container-fluid">
-  <div class="row justify-content-center">
     <div class="col-6">
-      <p>Accessibility tip: Using color to add meaning only provides a visual indication, which will not be conveyed to users of assistive technologies like screen readers. Please ensure the meaning is obvious from the content itself (e.g., the visible text with a sufficient color contrast) or is included through alternative means, such as additional text hidden with the .visually-hidden class.</p>
+      <img src="{{ '/images/dsps/DSPS Brand Concept 1.png' | relative_url }}" width="100%" alt="Brand Concept 1">
+    </div>
+    <div class="col-6">
+      <img src="{{ '/images/dsps/DSPS Brand Concept 2.png' | relative_url }}" width="100%" alt="Brand Concept 2">
     </div>
   </div>
 </div>
 
-<div class="container-xl">
+<div class="container-xxl my-5">
   <div class="row">
     <div class="col-12">
-      <img src="/images/design/banzo-shuk/shuk-02.png" width="100%" class="logo" alt="Banzo Shuk">
+      <div class="vp" data-video-player>
+        <video preload="metadata" playsinline muted poster="{{ '/media/dsps.jpg' | relative_url }}" aria-label="DSPS walkthrough">
+          <!-- <source src="{{ '/media/dsps.webm' | relative_url }}" type="video/webm"> -->
+          <source src="{{ '/media/dsps.mp4' | relative_url }}" type="video/mp4">
+        </video>
+
+        <div class="vp-controls">
+          <button type="button" class="vp-toggle" aria-label="Play">
+            <svg class="vp-icon-play" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true">
+              <path d="M8 5v14l11-7z" fill="currentColor" />
+            </svg>
+            <svg class="vp-icon-pause" viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" hidden>
+              <path d="M6
+  5h4v14H6zM14 5h4v14h-4z" fill="currentColor" />
+            </svg>
+          </button>
+
+          <input type="range" class="vp-seek" min="0" max="100" step="0.1" value="0" aria-label="Video timeline"
+            aria-valuetext="0:00 of 0:00">
+
+          <span class="vp-time" aria-hidden="true">0:00 / 0:00</span>
+        </div>
+      </div>
     </div>
   </div>
 </div>

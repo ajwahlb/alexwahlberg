@@ -1,0 +1,40 @@
+<html>
+
+{% include head.html %}
+
+<body>
+	{% include header.html %}
+	<main>
+		{{content}}
+
+		<section id="other-work" class="container-xl">
+			<div class="row">
+				<div class="col-12">
+					<h3 id="work">Other Projects</h3>
+					<div class="row row-cols-2 row-cols-md-4 g-2">
+						{% for item in site.work %}
+						{% unless item.url == page.url %}
+						<div class="col">
+							<a href="{{site.baseurl}}/work/{{item.slug}}/" class="project card mb-3 h-100">
+								<div class="card-body justify-content-start">
+									<h5 class="card-title">{{item.title}}</h5>
+									<div class="d-block">
+										{% for tags in item.tags %}
+										<span class="badge badge-color"> {{ tags.badge }}</span>
+										{% endfor %}
+									</div>
+								</div>
+							</a>
+						</div>
+						{% endunless %}
+						{% endfor %}
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	{% include footer.html %}
+</body>
+
+</html>
