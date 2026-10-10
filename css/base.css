@@ -4,11 +4,11 @@
     --white: #fff;
     --black: #222;
     --border-color: #1b1b1b;
-    --hp-project: #184352;
+    --hp-project: #0c3b4e;
     --badge-bg: #191919;
     --off-white: #c0c0c0;
     --bg-color: #17446f;
-    --bg-gradient: linear-gradient(167deg, #063f4c 0%, #035a66 8%, #035a66 90%, #636261 100%);
+    --bg-gradient: linear-gradient(167deg, #0C425D 0%, #035a66 50%, #0C425D 100%);
 }
 
 @media (min-width: 1400px) {
@@ -39,7 +39,7 @@ button:focus-visible,
 
 main {
     margin-bottom: 400px;
-    padding-bottom: 6rem;
+    padding-bottom: 10rem;
     box-shadow: 0px 14px 16px rgba(0, 0, 0, .3);
 }
 
@@ -108,7 +108,7 @@ img.rotate {
 }
 
 section {
-    margin-top: 6rem;
+    margin-top: 10rem;
 }
 
 /* navbar styles */
@@ -290,7 +290,7 @@ vp {
 footer {
     position: fixed;
     display: block;
-    background-color: #2c2c2c;
+    background: #2c2c2c url(/images/footer.png) no-repeat center center/cover;
     bottom: 0;
     width: 100%;
     z-index: -1;
