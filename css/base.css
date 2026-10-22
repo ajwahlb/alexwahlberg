@@ -29,7 +29,9 @@ body {
     color: var(--white);
     font-family: Arial, Helvetica, sans-serif;
 }
-
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    --bs-gutter-x: 2rem;
+}
 a:focus-visible,
 button:focus-visible,
 .nav-link:focus-visible {
@@ -62,7 +64,9 @@ h6,
     font-variation-settings:
         "wdth" 100;
 }
-
+.project-title{
+    padding-top: 2rem;
+}
 .badge-color {
     background-color: var(--badge-bg);
     color: var(--off-white);
@@ -235,7 +239,7 @@ a.project:focus-visible .card-title {
     color: var(--black);
 }
 /* video styles */
-vp {
+.vp {
     max-width: 100%;
     background: #000;
 }
@@ -287,6 +291,44 @@ vp {
     white-space: nowrap;
 }
 
+/* DSPS Styles */
+.dsps-concept-3{
+    background-color: var(--white);
+    padding: 2rem;
+    margin: 0;
+    color: var(--black);
+}
+.dsps-concept-3 .dsps-logo-mark,
+.dsps-concept-3 .dsps-logo-options{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.dsps-concept-3 .dsps-logo-mark{
+    border-right: 10px solid var(--black);
+    padding: 2rem;
+}
+.dsps-concept-3 img{
+    padding: 1rem .5rem;
+}
+.dsps-concept-3 img.dsps-logo{
+    max-width: 600px;
+}
+.dsps-concept-3 img.dsps-mark{
+    max-width: 220px;
+}
+.dsps-concept-3 img.dsps-mark-lg{
+    max-width: 350px;
+}
+.dsps-concept-3 img.dsps-full{
+    max-width: 872px;
+}
+@media (max-width:767px) {
+    .dsps-concept-3 .dsps-logo-mark{
+        border-right: none;
+        border-bottom: 10px solid var(--black);
+    }
+}
 footer {
     position: fixed;
     display: block;
