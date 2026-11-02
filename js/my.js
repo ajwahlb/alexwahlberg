@@ -3,10 +3,9 @@ const emailBtn = document.getElementById("email-btn");
 
 if (emailBtn) {
   emailBtn.addEventListener("click", function () {
-    const user = "yourname";
-    const domain = "example.com";
+    const user = "alexjwahlberg";
+    const domain = "gmail.com";
 
-    // Set mailto href right before the click is handled
     this.href = `mailto:${user}@${domain}`;
   });
 }
